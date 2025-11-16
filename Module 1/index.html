@@ -1,0 +1,56 @@
+<!DOCTYPE HTML> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>Module 1 Assignment</title>
+        <style>
+            #message {
+                opacity: 0;
+                display: inline-block;
+                font-size: 2em;
+                animation: swirlIn 1s ease-out forwards;
+                animation-delay: 1s;
+            }
+
+            #note {
+                opacity: 0;
+                display: inline-block;
+                font-size: 1em;
+                animation: swirlIn 1s ease-out forwards;
+                animation-delay: 3s;
+            }
+
+            @keyframes swirlIn{
+                0% {
+                    opacity: 0;
+                    transform: rotate(-360deg) scale(0)
+                }
+                100% {
+                    opacity: 1;
+                    transform: rotate(0deg) scale(1);
+                }
+            }
+
+            body {
+                background-color: black;
+                color: whitesmoke;
+                font-family: Arial, sans-serif;
+                text-align: center;
+                margin-top: 300px
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="message"></h1><br>
+        <p id="note"></p>
+        <script>
+            // Display header
+            document.getElementById("message").textContent = "Why do programmers prefer dark mode?";
+            document.getElementById("note").textContent = "(Look in the console for the answer; CTRL + SHIFT + I)";
+
+            // Print to console
+            console.log("Because light attracts bugs.");
+        </script>
+    </body>
+</html>
