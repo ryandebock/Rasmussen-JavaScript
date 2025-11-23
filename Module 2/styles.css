@@ -1,0 +1,15 @@
+h2 {
+    font-size: 48;
+    font-family: 'Aria', sans-serif;
+    text-align: center;
+}
+
+p {
+    font-size: 18;
+    font-family: 'Aria', sans-serif;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(215, 215, 128)
+}
